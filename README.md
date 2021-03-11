@@ -6,7 +6,7 @@
 pip install -r requirements.txt
 ```
 
-# Data Scrapping
+# Data Scraping
 
 - **[category]**: 문제 유형. ex) '순서'
 - **[EBSi ID]**: EBSi 아이디
