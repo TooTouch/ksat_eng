@@ -16,6 +16,11 @@ def data_download(dest_path: str, category: str):
     """
     try:
         print('Start Download')
+        
+        # make destination path to save data
+        if not os.path.isdir(dest_path):
+            os.makedirs(dest_path)
+
         gdd.download_file_from_google_drive(file_id='1EKYU6nL0vRs-7sV7g0E_4OJVRlY7LLYC',
                                             dest_path=os.path.join(dest_path,f'{category}.json'),
                                             unzip=False,
